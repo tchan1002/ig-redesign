@@ -16,7 +16,7 @@
       height: 50px;
       width: 50vw;
       border-radius: 30px;
-      border: 10ps solid black;
+      border: 10px solid black;
       background-color: black;
       color: white;
       margin-top: 2px;
@@ -42,6 +42,27 @@
       margin: 2vh;
 
     }
+    
+    
+.post:nth-child(1) { filter: blur(0px); }
+.post:nth-child(2) { filter: blur(0.5px); }
+.post:nth-child(3) { filter: blur(1px); }
+.post:nth-child(4) { filter: blur(1.5px); }
+.post:nth-child(5) { filter: blur(2px); }
+.post:nth-child(6) { filter: blur(2.5px); }
+.post:nth-child(7) { filter: blur(3px); }
+.post:nth-child(8) { filter: blur(3.5px); }
+.post:nth-child(9) { filter: blur(4px); }
+
+
+    .post:hover {
+      background-color: black;
+      height: 25vw;
+      width: 25vw;
+      border-radius: 2vh;
+      margin: 2vh;
+      filter: blur(0px);
+    }
 
     .post img {
       background-color: black;
@@ -49,30 +70,39 @@
       height: 100%;
       width: 100%;
 
-
     }
 
-  
-    @media only screen and (max-width: 600px) {
-  
+
+    
+    @media only screen and (max-width: 1000px) {
+
       .container {
-      display: grid;
-      grid-template-columns: 100vw;
-      padding-top: 20px;
-      margin: auto;
-      place-items: center;
-      grid-gap: 5px;
-    }
-      
-      .post {
-      background-color: black;
-      height: 80vw;
-      width: 80vw;
-      border-radius: 2vh;
-      margin: 2vh;
+        display: grid;
+        grid-template-columns: 100vw;
+        padding-top: 20px;
+        margin: auto;
+        place-items: center;
+        grid-gap: 5px;
+      }
 
+      .post {
+        background-color: black;
+        height: 80vw;
+        width: 80vw;
+        border-radius: 2vh;
+        margin: 2vh;
+
+      }
+      
+      .post:hover {
+     background-color: black;
+        height: 80vw;
+        width: 80vw;
+        border-radius: 2vh;
+        margin: 2vh;
+        filter: blur(0px);
     }
-}
+    }
     
   </style>
 </head>
@@ -80,18 +110,18 @@
 
 <body>
   <div class="header"> Toby's Memories </div>
-    <div class="header"> 2022 to 2025 </div>
+  <div class="header"> 2022 to 2025 </div>
   <div class="container">
+    <div class="post"> <img src="Image2.JPG" alt="Chilling at the Pool"> </div>
+    <div class="post"><img src="Image9.jpg" alt="Cooking in the house"> </div>
+    <div class="post"> <img src="Image7.jpg" alt="Hanging out with Grandma"> </div>
+    <div class="post"> <img src="Image8.JPG" alt="Sliced Bread Table"> </div>
+    <div class="post"> <img src="Image4.jpg" alt="Sliced Bread"></div>
+    <div class="post"> <img src="Image5.JPG" alt="Mock Trial"> </div>
+    <div class="post"> <img src="Image6.JPG" alt="Lunch in Irvine"> </div>
+    <div class="post"> <img src="Image3.JPG" alt="First birthday in College"> </div>
+    <div class="post"> <img src="Image1.JPEG" alt="Hanging out on the roof"> </div>
 
-    <div class="post", style="filter: blur(0px);"> <img src="Image2.JPG" , alt="Chilling at the Pool"> </div>
-    <div class="post", style="filter: blur(0.5px);"><img src="Image9.jpg" , alt="Cooking in the house"> </div>
-    <div class="post", style="filter: blur(1px);"> <img src="Image7.jpg" , alt="Hanging out with Grandma"> </div>
-    <div class="post", style="filter: blur(1.5px);"> <img src="Image8.JPG" , alt="Sliced Bread Table"> </div>
-    <div class="post", style="filter: blur(2px);"> <img src="Image4.jpg" , alt="Sliced Bread"></div>
-    <div class="post", style="filter: blur(2.5px);"> <img src="Image5.JPG" , alt="Mock Trial"> </div>
-    <div class="post", style="filter: blur(3px);"> <img src="Image6.JPG" , alt="Lunch in Irvine"> </div>
-    <div class="post", style="filter: blur(3.5px);"> <img src="Image3.JPG" , alt="First birthday in College"> </div>
-    <div class="post", style="filter: blur(4px);"> <img src="Image1.JPEG" , alt="Hanging out on the roof"> </div>
   </div>
 
 
