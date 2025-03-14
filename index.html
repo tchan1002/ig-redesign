@@ -1,86 +1,95 @@
 <!DOCTYPE html>
 <head>
-  <title>"Who's On Phonebook"</title>
+  <title>"IG Redesign"</title>
 
   <style>
-    .global {
+    * {
       font-family: Arial;
+      font-size: 20px;
+      background-color: black;
     }
 
     .header {
       display: flex;
-      justify-content: space-between;
-      position: absolute;
-      top: 0px;
-      width: 100vw;
-      height: 8vh;
-      background-color: white;
+      justify-content: center;
+      align-items: center;
+      height: 50px;
+      width: 50vw;
+      border-radius: 30px;
+      border: 10ps solid black;
+      background-color: black;
+      color: white;
+      margin-top: 2px;
+      margin-left: 25vw;
+      padding: 2px;
+
     }
-    
-    .right {
-      display: flex;
-      justify-content: space-between;
-      position: absolute;
-      top: 0px;
-      right: 0px;
-      width: vw;
-      height: 8vh;
-      background-color: pink;
+
+    .container {
+      display: grid;
+      grid-template-columns: 30vw 30vw 30vw;
+      padding-top: 20px;
+      margin: auto 5vw;
+      place-items: center;
+      grid-gap: 5px;
+    }
+
+    .post {
+      background-color: black;
+      height: 24vh;
+      width: 25vw;
+      border-radius: 2vh;
+      margin: 2vh;
+
+    }
+
+    .post img {
+      background-color: black;
+      border-radius: 2vh;
+      height: 100%;
+      width: 100%;
+
+
     }
 
     .footer {
-      background-color: white;
-      position: absolute;
-      bottom: 0px;
-      width: 100vw;
-      height: 20vh;
-    }
+      height: 2vh;
+      width: 50vw;
 
-    .main {
-      background-color: black;
+      border-radius: 30px;
+      border: 10px solid white;
+
+      background-color: hsl(252, 96%, 70%);
+
       color: white;
-      position: absolute;
-      top: 8vh;
-      width: 100vw;
-      height: 72vh;
-    }
+      font-size: 18pt;
 
-    .title {
-      font-size: 50px;
-      font-style: bold;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      margin-top: 25px;
+      margin-left: 25vw;
+      padding: 2px;
     }
   </style>
 </head>
 
 
 <body>
-  <div class="global">
-    <div class="header">
-        <div class="title">
-          Who's On?
-        </div>
-        <div class="right">
-        <div class="title">
-          Archive
-        </div>
-        <div class="title">
-          Directory
-        </div>
-        </div>
-    </div>
+  <div class="header"> Let Memories Be Memories </div>
+  <div class="container">
 
-
-    <div class="main">
-      askdnaksdnasnjkdnasjndaanjskdnasjdnakjsdna
-    </div>
-    
-    
-    <div class="footer">
-      cskandjkasndjkasndjkasndja
-    </div>
+    <div class="post"> <img src="Image2.JPG" , alt="Chilling at the Pool"> </div>
+    <div class="post"><img src="Image9.jpg" , alt="Cooking in the house"> </div>
+    <div class="post"> <img src="Image7.jpg" , alt="Hanging out with Grandma"> </div>
+    <div class="post"> <img src="Image8.JPG" , alt="Sliced Bread Table"> </div>
+    <div class="post"> <img src="Image4.jpg" , alt="Sliced Bread"></div>
+    <div class="post"> <img src="Image5.JPG" , alt="Mock Trial"> </div>
+    <div class="post"> <img src="Image6.JPG" , alt="Lunch in Irvine"> </div>
+    <div class="post"> <img src="Image3.JPG" , alt="First birthday in College"> </div>
+    <div class="post"> <img src="Image1.JPEG" , alt="Hanging out on the roof"> </div>
   </div>
-
-
 
 
 </body>
