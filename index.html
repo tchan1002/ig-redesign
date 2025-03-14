@@ -5,7 +5,7 @@
   <style>
     * {
       font-family: Arial;
-      font-size: 20px;
+      font-size: 3vh;
       background-color: black;
     }
 
@@ -29,14 +29,14 @@
       display: grid;
       grid-template-columns: 30vw 30vw 30vw;
       padding-top: 20px;
-      margin: auto 5vw;
+      margin: auto 3vw;
       place-items: center;
       grid-gap: 5px;
     }
 
     .post {
       background-color: black;
-      height: 24vh;
+      height: 25vw;
       width: 25vw;
       border-radius: 2vh;
       margin: 2vh;
@@ -52,26 +52,28 @@
 
     }
 
-    .footer {
-      height: 2vh;
-      width: 50vw;
-
-      border-radius: 30px;
-      border: 10px solid white;
-
-      background-color: hsl(252, 96%, 70%);
-
-      color: white;
-      font-size: 18pt;
-
-      display: flex;
-      justify-content: center;
-      align-items: center;
-
-      margin-top: 25px;
-      margin-left: 25vw;
-      padding: 2px;
+  
+    @media only screen and (max-width: 600px) {
+  
+      .container {
+      display: grid;
+      grid-template-columns: 100vw;
+      padding-top: 20px;
+      margin: auto;
+      place-items: center;
+      grid-gap: 5px;
     }
+      
+      .post {
+      background-color: black;
+      height: 80vw;
+      width: 80vw;
+      border-radius: 2vh;
+      margin: 2vh;
+
+    }
+}
+    
   </style>
 </head>
 
@@ -80,15 +82,15 @@
   <div class="header"> Let Memories Be Memories </div>
   <div class="container">
 
-    <div class="post"> <img src="Image2.JPG" , alt="Chilling at the Pool"> </div>
-    <div class="post"><img src="Image9.jpg" , alt="Cooking in the house"> </div>
-    <div class="post"> <img src="Image7.jpg" , alt="Hanging out with Grandma"> </div>
-    <div class="post"> <img src="Image8.JPG" , alt="Sliced Bread Table"> </div>
-    <div class="post"> <img src="Image4.jpg" , alt="Sliced Bread"></div>
-    <div class="post"> <img src="Image5.JPG" , alt="Mock Trial"> </div>
-    <div class="post"> <img src="Image6.JPG" , alt="Lunch in Irvine"> </div>
-    <div class="post"> <img src="Image3.JPG" , alt="First birthday in College"> </div>
-    <div class="post"> <img src="Image1.JPEG" , alt="Hanging out on the roof"> </div>
+    <div class="post", style="filter: blur(0px);"> <img src="Image2.JPG" , alt="Chilling at the Pool"> </div>
+    <div class="post", style="filter: blur(0.5px);"><img src="Image9.jpg" , alt="Cooking in the house"> </div>
+    <div class="post", style="filter: blur(1px);"> <img src="Image7.jpg" , alt="Hanging out with Grandma"> </div>
+    <div class="post", style="filter: blur(1.5px);"> <img src="Image8.JPG" , alt="Sliced Bread Table"> </div>
+    <div class="post", style="filter: blur(2px);"> <img src="Image4.jpg" , alt="Sliced Bread"></div>
+    <div class="post", style="filter: blur(2.5px);"> <img src="Image5.JPG" , alt="Mock Trial"> </div>
+    <div class="post", style="filter: blur(3px);"> <img src="Image6.JPG" , alt="Lunch in Irvine"> </div>
+    <div class="post", style="filter: blur(3.5px);"> <img src="Image3.JPG" , alt="First birthday in College"> </div>
+    <div class="post", style="filter: blur(4px);"> <img src="Image1.JPEG" , alt="Hanging out on the roof"> </div>
   </div>
 
 
